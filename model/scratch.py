@@ -104,8 +104,9 @@ print(f'training loss : {train_loss}')
 print(f'val loss : {val_loss}')
 
 # saving the model
-model.save('my_model.h5')
-print('./model/model saved')
+MODEL_NAME = 'Traffic_detection.h5'
+model.save(f'./model/{MODEL_NAME}')
+print(f'{MODEL_NAME} saved successfully')
 
 
 

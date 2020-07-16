@@ -1,4 +1,5 @@
 from __future__ import division, print_function
+
 # coding=utf-8
 import sys
 import os
@@ -10,16 +11,18 @@ import numpy as np
 from tensorflow.keras.applications.imagenet_utils import preprocess_input, decode_predictions
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
+print('import successfull')
 
 # Flask utils
 from flask import Flask, redirect, url_for, request, render_template
 from werkzeug.utils import secure_filename
 
 # Define a flask app
-app = Flask(__name__)
+app = Flask(__name__, static_folder=os.path.abspath('./uploads'))
 
 # Model saved with Keras model.save()
 MODEL_PATH ='./model/my_model.h5'
+UPLOAD_FOLDER = 'uploads'
 
 # Load your trained model
 model = load_model(MODEL_PATH)
@@ -73,7 +76,7 @@ classes = { 1:'Speed limit (20km/h)',
 @app.route('/', methods=['GET'])
 def index():
     # Main page
-    return render_template('index.html')
+    return render_template('template.html', label='None', imagesource='./uploads/main_temp.jpg')
 
 def model_prediction(file_path, model):
     from tensorflow.keras.preprocessing import image
@@ -104,10 +107,10 @@ def upload():
             basepath, 'uploads', secure_filename(f.filename))
         f.save(file_path)
 
-        # Make prediction
+        #Make prediction
         preds = model_prediction(file_path, model)
-        result=preds
-        return render_template('template.html', label=result, imagesource='./uploads/' + f.filename)
+        sign = classes[pred+1]
+        return render_template('template.html', label='Need Pred', imagesource='./uploads/' + f.filename)
     return render_template("index.html", label=0, imagesource=None)
 
 
