@@ -6,19 +6,16 @@
 
   Data has downloded form kaggle .Use Below link to download the dataset. 
 
-  <p>An absolute URL: <a href="https://www.kaggle.com/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign">Dataset Link </a></p>
+  <p>Dataset Link: <a href="https://www.kaggle.com/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign">GTSRB Data </a></p>
 
   It conatains three files.
 
 
-  1. Meta data : Meta data conatins diff- diff type of signal images used in Training the model
+  1. Meta data : Meta data conatins diff- diff type of signal images used in Training the model. It has 43 types of traffic signal data so almot we have 86k images to train.
   2. Train
   3. Test data
 
   
-
-
-
 **quick demo**
 
 ![Recordit GIF](http://g.recordit.co/oYi4PX5Lq1.gif)
