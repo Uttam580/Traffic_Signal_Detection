@@ -15,7 +15,7 @@ from tensorflow.keras.preprocessing import image
 print('import successfull')
 
 # Model saved with Keras model.save()
-MODEL_PATH ='./model/my_model.h5'
+MODEL_PATH ='./model/Traffic_detection.h5'
 
 # Load your trained model
 model = load_model(MODEL_PATH)
@@ -87,6 +87,6 @@ def model_predict(file_path, model):
     return pred, sign
 
 #images that needs to be predicted 
-file_path= './data/Test/00006.png'
+file_path= './data/Test/00001.png'
 preds = model_predict(file_path, model)
 print(preds)

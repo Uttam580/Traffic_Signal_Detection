@@ -6,6 +6,7 @@ import os
 import glob
 import re
 import numpy as np
+import time 
 
 # Keras
 from tensorflow.keras.applications.imagenet_utils import preprocess_input, decode_predictions
@@ -17,11 +18,11 @@ print('import successfull')
 from flask import Flask, redirect, url_for, request, render_template
 from werkzeug.utils import secure_filename
 
-# Define a flask app
+# Define a flask app, defining static folder  for uploaded file 
 app = Flask(__name__, static_folder=os.path.abspath('./uploads'))
 
 # Model saved with Keras model.save()
-MODEL_PATH ='./model/my_model.h5'
+MODEL_PATH ='./model/Traffic_detection.h5'
 UPLOAD_FOLDER = 'uploads'
 
 # Load your trained model
@@ -109,9 +110,8 @@ def upload():
 
         #Make prediction
         preds = model_prediction(file_path, model)
-        sign = classes[pred+1]
-        return render_template('template.html', label='Need Pred', imagesource='./uploads/' + f.filename)
-    return render_template("index.html", label=0, imagesource=None)
+        return render_template('template.html', label=preds , imagesource='./uploads/' + f.filename)
+    return render_template("template.html", label="None", imagesource=None)
 
 
 if __name__ == '__main__':
