@@ -4,7 +4,10 @@
 
   Traffic Signal Detection UI to detect traffic signal and integrating with Flask.
 
-  Data has downloded form kaggle .Please use Below link to download the dataset. 
+  Data has downloded form kaggle .Use Below link to download the dataset. 
+
+  <p>An absolute URL: <a href="https://www.kaggle.com/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign">Dataset Link </a></p>
+
   It conatains three files.
 
 
@@ -13,7 +16,7 @@
   3. Test data
 
   
-https://www.kaggle.com/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign
+
 
 
 **quick demo**
