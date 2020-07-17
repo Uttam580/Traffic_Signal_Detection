@@ -75,5 +75,15 @@ traffic_signal_detection Directory Tree
 pip install -r requirements.txt
 ```
 
+## Technologies Used
+
+![](https://forthebadge.com/images/badges/made-with-python.svg)
+
+[<img target="_blank" src="https://www.tensorflow.org/images/tf_logo_social.png" width=280>](https://www.tensorflow.org)
+[<img target="_blank" src="https://flask.palletsprojects.com/en/1.1.x/_images/flask-logo.png" width=170>](https://flask.palletsprojects.com/en/1.1.x/) 
+
+
+
+
    
 
