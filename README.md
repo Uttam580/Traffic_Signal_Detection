@@ -79,11 +79,10 @@ pip install -r requirements.txt
 
 ![](https://forthebadge.com/images/badges/made-with-python.svg)
 
-[<img target="_blank" src="https://www.tensorflow.org/images/tf_logo_social.png" width=280>](https://www.tensorflow.org)
-[<img target="_blank" src="https://flask.palletsprojects.com/en/1.1.x/_images/flask-logo.png" width=170>](https://flask.palletsprojects.com/en/1.1.x/) 
+[<img target="_blank" src="https://www.tensorflow.org/images/tf_logo_social.png" width=280>](https://www.tensorflow.org)[<img target="_blank" src="https://flask.palletsprojects.com/en/1.1.x/_images/flask-logo.png" width=170>](https://flask.palletsprojects.com/en/1.1.x/) 
 
 
 
-
-   
+## License
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
