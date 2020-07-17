@@ -20,6 +20,12 @@
 
 ![Recordit GIF](http://g.recordit.co/oYi4PX5Lq1.gif)
 
+## Technical Aspect
+
+1. Training a deep learning model using tensorflow. I trained model on local system using NVIDIA GEFORCE GTX 1650 for batch size 32 , epoch 20 and I had total 86K images to train .It took about 7 minutes to trian the model.
+
+2. Building and hosting using FLASK .
+
 
 ```
 traffic_signal_detection Directory Tree
@@ -61,7 +67,13 @@ traffic_signal_detection Directory Tree
 
 # Installation
 
-* Download the entire repository as a folder and open ```app.py``` and run it with IDE . That's it!
-   http://127.0.0.1:5001/
+* Download the entire repository as a folder and open ```app.py``` and run it with IDE .
+  Make sure to install  required packeages and librabries. 
+
+   http://127.0.0.1:5000/
+```bash
+pip install -r requirements.txt
+```
+
    
 
