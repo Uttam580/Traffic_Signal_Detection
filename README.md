@@ -23,6 +23,9 @@
 ## Technical Aspect
 
 1. Training a deep learning model using tensorflow. I trained model on local system using NVIDIA GEFORCE GTX 1650 for batch size 32 , epoch 20 and I had total 86K images to train .It took about 7 minutes to trian the model.
+Below is the neural network architect of trained model.
+
+![Network Images](https://github.com/Uttam580/Traffic_Signal_Detection/blob/master/my_model.h5.png)
 
 2. Building and hosting using FLASK .
 
