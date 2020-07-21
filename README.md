@@ -29,7 +29,7 @@
 
 1. Training a deep learning model using tensorflow. I trained model on local system using NVIDIA GEFORCE GTX 1650 for batch size 32 , epoch 20 and I had total 86K images to train .It took about 7 minutes to trian the model.
 
-```To check if model is acelearted by gpu or not```
+## ```To check if model is acelearted by gpu or not```
 
 import tensorflow as tf 
 
@@ -40,7 +40,7 @@ print(tf.test.is_built_with_cuda())
 print(device_lib.list_local_devices())
 
 
-```To get compatible cuda and cudnn according to your sys config.```
+## ```To get compatible cuda and cudnn according to your sys config.```
 
 Just create a new environment using ```conda create -n [name] python=[version]``` And then use ```conda install -c conda-forge tensorflow-gpu``` and it will assess which version (CUDA,CUDNN, etc.) you require and download and install it directly ;)
 
