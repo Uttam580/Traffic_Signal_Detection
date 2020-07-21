@@ -30,9 +30,13 @@
 1. Training a deep learning model using tensorflow. I trained model on local system using NVIDIA GEFORCE GTX 1650 for batch size 32 , epoch 20 and I had total 86K images to train .It took about 7 minutes to trian the model.
 
 ```To check if model is acelearted by gpu or not```
+
 import tensorflow as tf 
+
 from tensorflow.python.client import device_lib
+
 print(tf.test.is_built_with_cuda())
+
 print(device_lib.list_local_devices())
 
 
