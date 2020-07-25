@@ -23,7 +23,7 @@
   
 **quick demo**
 
-![Recordit GIF](http://g.recordit.co/VBavIFA7e3.gif)
+![Recordit GIF](http://g.recordit.co/dKSh8n2ARj.gif)
 
 ## Technical Aspect
 
