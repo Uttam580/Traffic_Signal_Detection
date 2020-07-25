@@ -9,6 +9,10 @@ import numpy as np
 import time 
 
 # Keras
+import tensorflow
+config = tensorflow.compat.v1.ConfigProto()
+config.gpu_options.allow_growth = True
+sess = tensorflow.compat.v1.Session(config=config)
 from tensorflow.keras.applications.imagenet_utils import preprocess_input, decode_predictions
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
