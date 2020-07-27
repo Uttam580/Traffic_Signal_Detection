@@ -4,7 +4,8 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/Uttam580/Traffic_Signal_Detection?style=plastic)
 ![GitHub last commit](https://img.shields.io/github/last-commit/Uttam580/Traffic_Signal_Detection?color=red&style=plastic)
 
-# Blog link: 
+
+Medium Blog: 
 
 <a href ="https://medium.com/@uttam94/traffic-signal-detection-system-intrgrated-with-flask-d7c471fd9087"> <img src="https://github.com/Uttam580/Uttam580/blob/master/img/medium.png" width=60 height=30>
 
